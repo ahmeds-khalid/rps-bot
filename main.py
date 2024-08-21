@@ -82,7 +82,7 @@ async def game(interaction: Interaction):
         embed = nextcord.Embed(title=player, color=nextcord.Color.random())
         embed.add_field(name='Your Choice:', value=view.value, inline=False)
         embed.add_field(name='Ai Choice:', value=botValue, inline=False)
-        embed.add_field(name='Result:', value="<== " + win + " ==>", inline=False)
+        embed.add_field(name='Result:', value="𒆜" + win + "𒆜", inline=False)
 
         await interaction.followup.send(embed=embed)
 
