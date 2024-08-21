@@ -77,7 +77,7 @@ async def game(interaction: Interaction):
         elif botChoice == 3:
             botValue = "Scissor"
 
-        player = interaction.user.display_name + "'s Match"
+        player = interaction.user.mention + "'s Match"
         
         embed = nextcord.Embed(title=player, color=nextcord.Color.random())
         embed.add_field(name='Your Choice:', value=view.value, inline=False)
