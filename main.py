@@ -41,7 +41,7 @@ class Confirm(nextcord.ui.View):
         self.value = "scissor"
         self.stop()
 
-@client.slash_command(name="game", description="Start a classic rock paper scissors game", guild_ids=[1173218609682731038])
+@client.slash_command(name="rps", description="Start a classic rock paper scissors game", guild_ids=[1173218609682731038])
 async def game(interaction: Interaction):
     view = Confirm()
     await interaction.response.send_message("Choose rock, paper, or scissors", view=view)
