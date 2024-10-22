@@ -199,4 +199,4 @@ async def leaderboard(interaction: Interaction):
     
     await interaction.response.send_message(embed=embed)
 
-bot.run("MTE4NzQwNzUyMTA5NTM2ODcxNQ.GR5T_Z.gLHPxpYzdp96qDo5P7BAkyIzBcjRmPMdL4Kz7c")
+bot.run(Token)
